@@ -14,7 +14,7 @@
 		    let secondMax = -Infinity;
 			
 			 if (!arr || arr.length < 2) {
-        return -1;
+        return -Infinity;
     }
 			for ( let i = 0 ; i < n ; i++) {
 				if ( arr[i]>max){
@@ -27,15 +27,15 @@
 			  return (secondMax === -Infinity) ? -1 : secondMax;
 		}
 
-		// function Main() {
-		// 	var n = prompt("Enter the number of elements");
-		// 	var arr = [];
-		// 	for (var i = 0; i < n; i++) {
-		// 		arr[i] = prompt("Enter element " + (i+1));
-		// 	}
-		// 	alert(secondHighest(arr));
-		// }
-		// Main();
+		function Main() {
+			var n = prompt("Enter the number of elements");
+			var arr = [];
+			for (var i = 0; i < n; i++) {
+				arr[i] = prompt("Enter element " + (i+1));
+			}
+			alert(secondHighest(arr));
+		}
+		Main();
 	</script>
 
     <script type="text/javascript" src="./script.js">
